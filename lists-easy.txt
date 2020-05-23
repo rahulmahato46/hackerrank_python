@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    N = int(input())
+    new_var=[]
+
+    for var in range(0,N):
+        var = input().split()
+        if var[0]=='insert':
+            new_var.insert(int(var[1]),int(var[2]))
+        elif var[0]=='print':
+            print(new_var)
+        elif var[0]=='remove':
+            new_var.remove(int(var[1]))
+        elif var[0]=='append':
+            new_var.append(int(var[1]))
+        elif var[0]=='sort':
+            new_var.sort()
+        elif var[0]=='pop':
+            new_var.pop()
+        else:
+            new_var.reverse()
